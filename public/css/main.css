@@ -1,6 +1,7 @@
 :root {
     --color-less: lightgray;
     --bkg-color: #f9f9f9;
+    --main-width-t: min(500px, 80%);
     -red: 1;
 }
 body {
@@ -51,9 +52,9 @@ a {
 }
 
 .main {
-    align-self: center;
-    left: 10%;
-    width: 80%;
+    margin: auto;
+    left: calc(100% / 2 - var(--main-width-t) / 2);
+    width: var(--main-width-t);
     position: absolute;
     --padding-bottom: 100%;
     background-color: white;
@@ -62,6 +63,7 @@ a {
 .main-pad {
     margin: 1%;
     height: 100%;
+    width: 100%;
     position: absolute;
 }
 .titre {

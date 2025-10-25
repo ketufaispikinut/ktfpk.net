@@ -4,8 +4,8 @@ title = 'KTFPKNET'
 #en-US#My New Hugo Site
 [menus]
   [[menus.main]]
-    title = "Acceuil"
-    name = 'Acceuil'
+    title = "Accueil"
+    name = 'Accueil'
     pageRef = '/'
     weight = 10
 

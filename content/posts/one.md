@@ -2,6 +2,7 @@
 date = '2025-10-24T20:57:15-04:00'
 draft = false
 title = 'Titre intéressant'
+#tags = ["fuck", "you"]
 +++
 
 LOREM IPSUM DOLOR SIT AMET
