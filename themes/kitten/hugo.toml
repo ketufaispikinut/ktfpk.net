@@ -1,20 +1,23 @@
 baseURL = 'https://example.org/'
-languageCode = 'en-US'
-title = 'My New Hugo Site'
-
+languageCode = 'fr-CA'
+title = 'KTFPKNET'
+#en-US#My New Hugo Site
 [menus]
   [[menus.main]]
-    name = 'Home'
+    title = "Acceuil"
+    name = 'Acceuil'
     pageRef = '/'
     weight = 10
 
   [[menus.main]]
-    name = 'Posts'
+    title = "Pages"
+    name = 'Pages'
     pageRef = '/posts'
     weight = 20
 
   [[menus.main]]
-    name = 'Tags'
+    title = "Catégories"
+    name = 'Catégories'
     pageRef = '/tags'
     weight = 30
 

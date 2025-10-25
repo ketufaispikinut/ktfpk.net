@@ -1,22 +1,106 @@
+:root {
+    --color-less: lightgray;
+    --bkg-color: #f9f9f9;
+    -red: 1;
+}
 body {
-  color: #222;
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin: 1rem;
-  max-width: 768px;
+    color: #222;
+    font-family: "Trebuchet MS", sans-serif;
+    line-height: 1.5;
+    margin: 1rem;
+    max-width: 768px;
+    background-color: var(--bkg-color);
 }
 
 header {
-  border-bottom: 1px solid #222;
-  margin-bottom: 1rem;
+    border-bottom: 1px solid #222;
+    margin-bottom: 1rem;
+    align-self: center;
+    text-anchor: middle;
+    text-transform: uppercase;
+    color: gray;
 }
 
 footer {
-  border-top: 1px solid #222;
-  margin-top: 1rem;
+    border-top: 1px solid #222;
+    margin-top: 1rem;
+    text-align: center;
+}
+hr {
+    color: var(--color-less);
+    display: block;
+    height: 1px;
+    border: 1px;
+    background-color: red;
+    border-top: 8px solid lightgray;
+    margin: 1em 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    text-transform: capitalize;
+}
+.titree {
+    color: var(--color-less);
+}
+a {
+    color: lightskyblue;
+    text-decoration: none;
+    text-align: center;
+    text-anchor: middle;
 }
 
-a {
-  color: #00e;
-  text-decoration: none;
+.main {
+    align-self: center;
+    left: 10%;
+    width: 80%;
+    position: absolute;
+    --padding-bottom: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.main-pad {
+    margin: 1%;
+    height: 100%;
+    position: absolute;
+}
+.titre {
+    text-align: center;
+    display: inline;
+}
+nav {
+    display: inline;
+    right: 0%;
+    position: absolute;
+}
+ul {
+    align-self: center;
+}
+li {
+    list-style-position: inside;
+    margin: 5px;
+    display: inline;
+    list-style: square;
+    text-anchor: middle;
+}
+.navclass {
+    display: inline;
+}
+.navclass_master {
+    right: 0%;
+    display: inline;
+    position: absolute;
+}
+.time {
+    width: 100%;
+    font-style: italic;
+    color: var(--color-less);
+    text-align: center;
+}
+em {
+    color: var(--color-less);
+}
+strong {
+    text-decoration-line: underline;
+    text-decoration-color: var(--color-less);
 }
