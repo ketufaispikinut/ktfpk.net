@@ -87,6 +87,7 @@ li {
 }
 .navclass {
     display: inline;
+    margin-left: 5px;
 }
 .navclass_master {
     right: 0%;

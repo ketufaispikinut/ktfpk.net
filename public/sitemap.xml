@@ -14,9 +14,5 @@
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/fuck/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/you/</loc>
   </url>
 </urlset>
