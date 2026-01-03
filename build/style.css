@@ -52,3 +52,7 @@ img {
 .menu {
     text-align: center;
 }
+.footnotes {
+    margin-top: 2em;
+    font-size: smaller;
+}

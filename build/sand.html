@@ -1,4 +1,45 @@
-<html><head><title>Sand</title><link href="style.css" rel="stylesheet" type="text/css" media="all"></style></head><body><div class="main"><h1> Falling Sand Simulations</h1><br><br><div class="footer">
+<html><head><title>Sand</title><link href="style.css" rel="stylesheet" type="text/css" media="all"></style></head><body><div class="main"><h1> Falling Sand Simulations</h1><br><p class="section"> 0. Introduction</p><br><!--FALLING SAND ENGINE PICTURES (powder toy, sandspiel, noita)-->
+<br>I love playing with falling sand simulations. I love making falling sand simulations. In fact, over the years, I've written quite a lot of them, it being one of my first real projects in a "real" programming language, way back when I was learning Java. You can check out the latest in the serie <a href="https://codeberg.org/ktfpkn/sandwar/src/branch/root/litterbox-2">here</a>.
+<br>
+<br>Being as incompetent as I was back then, I would have had no shot at producing a working simulation without the amazing resources available online in the form of amazing tutorials<sup id = "src_1"><a href="#foot_note_1">1</a></sup>, devlogs<sup id = "src_2"><a href="#foot_note_2">2</a></sup>, writeups<sup id = "src_3"><a href="#foot_note_3">3</a></sup> and even GDC talks<sup id = "src_4"><a href="#foot_note_4">4</a></sup> (!).
+<br>
+<br>I've decided to contribute back by writing a sort of guide to falling sand simulations, based on the knownledge I amassed over time.
+<br>Here is my guide.
+<br>
+<br>Of course, there are many ways to build a falling sand simulation, be it using shaders on the GPU, as a strict cellular automata or as some other form of CPU-bound abomination. I'll go with the workings of a pseudo-cellular automata implementation for the CPU, since this is principally what I wrote.
+<br>
+<br><p class="section"> 1. Building a falling sand simulation</p><br>So, where do we start? At heart, a classical falling sand simulation involves moving tiles or pixels on a discrete grid with basic rules. For instance, a sand pixel moves downward if there isn't any pixel below it, and moves to the left or to the right if it can't move downward.
+<br><pre>Can I fall?
+ YES -> Move downward
+  NO ->  Can I go down-east?
+         |
+         v
+         YES -> Move down-east
+          NO -> Can I go down-west?
+                |
+                v
+                YES -> Move down-west
+                 NO -> I can't move :(</pre>
+<br>The heart of the problem is fine-tuning the logic so it feels nice and making sure that logic can run on enough tiles at once <em>and that it does so properly.</em>
+<br>
+<br>Let's start by defining a matrix of tiles and rendering it to the screen!
+<br><pre></pre>
+<br>This matrix will be our "world", where our tiles shall interact and where most of your work will be concentrated. Now, let's actually make those tiles move! We're here for falling sand, after all, not for static sand or immobile floaty yellow-ish square on the screen!
+<br><pre><span style="font-weight:bold;color:#a71d5d;">fn </span><span style="font-weight:bold;color:#795da3;">main</span><span style="color:#323232;">() {
+</span><span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// do rendering
+</span><span style="color:#323232;">}
+</span></pre>
+<br><pre></pre>
+<br>
+<br><pre><span style="font-weight:bold;color:#a71d5d;">fn </span><span style="font-weight:bold;color:#795da3;">main</span><span style="color:#323232;">() {
+</span><span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// do falling sand simulating
+</span><span style="color:#323232;">}
+</span></pre>
+<br><p class="section"> 2. Improving a falling sand simulation</p><br>
+<br><p class="section"> 3. Rigidbodies</p><br>
+<br><p class="section"> 4. Performance</p><br>
+<br><p class="section"> 5. More performance</p><br><em>Written by KTFPKN</em>
+<br><div class="footnotes"><ol><li id ="foot_note_1">See <a href="https://winter.dev/articles/falling-sand">Winter's</a> or <a href="https://www.youtube.com/watch?v=5Ka3tbbT-9E"> MARF's</a> <a href ="#src_1">↩</a></li><br><li id ="foot_note_2">See for instance <a href="https://www.slowrush.dev">slowrush.dev</a> <a href ="#src_2">↩</a></li><br><li id ="foot_note_3">Such as <a href="https://maxbittker.com/making-sandspiel">Max Bittker's</a> <a href ="#src_3">↩</a></li><br><li id ="foot_note_4">Petri Purho's amazing GDC talk about Noita's engine can be found <a href="https://www.gdcvault.com/play/1025695/Exploring-the-Tech-and-Design">here</a>. <a href ="#src_4">↩</a></li><br></ol></div><br><div class="footer">
     <a href="/">Home</a>
 </div>
 </div></body>
