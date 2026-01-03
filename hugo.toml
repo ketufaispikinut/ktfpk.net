@@ -1,7 +1,0 @@
-baseURL = 'https://example.org/'
-languageCode = 'fr-ca'
-title = 'ketufaispikinet'
-theme = 'kitten'
-[caches]
- [caches.images]
-  dir = ':cacheDir/images'

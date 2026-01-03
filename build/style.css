@@ -1,0 +1,54 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+:root {
+    --main-width-t: min(500px, 80%);
+}
+body {
+    background-color: white;
+    color: black;
+    font-family: Trebuchet MS;
+}
+h1 {
+    text-align: center;
+}
+.section {
+    font-size: larger;
+}
+.main {
+    position: absolute;
+    left: calc(100% / 2 - var(--main-width-t) / 2);
+    width: var(--main-width-t);
+}
+.footer {
+    text-align: center;
+}
+pre {
+    /*background: #efffff;
+  color:  #81c4ff;;
+  word-wrap: break-word;
+  box-decoration-break: clone;
+  padding: .1rem .3rem .2rem;
+  border-radius: .2rem;
+  margin-left:5%;
+  margin-right:5%;*/
+    background: white;
+    color: black;
+    word-wrap: break-word;
+    box-decoration-break: clone;
+    padding: 0.3rem 0.3rem 0.3rem;
+    border-radius: 0.4rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.1rem;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu {
+    text-align: center;
+}

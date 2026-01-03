@@ -1,0 +1,14 @@
+#c'est le fichier inutile car j'ai une mémoire nulle!
+
+# restarter le serveur (toutes ces commandes sont côté raspberry pi)
+$ systemctl restart webserver
+# status du serveur
+$ systemctl status webserver
+# stopper le serveur
+$ systemctl stop webserver
+# je sais pas trop la différence entre ça et restart
+$ systemctl start webserver
+
+# la commande intéressante de ce côté: sync.sh!
+# sync.sh envoie les fichiers dans data du côté du raspberry pi
+$ ./sync.sh
