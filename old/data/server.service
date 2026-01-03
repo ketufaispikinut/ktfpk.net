@@ -1,6 +1,0 @@
-[Unit]
-Description=Web server (SWS)
-After=network.target
-[Service]
-ExecStart=sh /home/pea/Desktop/pikinet/server/data/run.sh
-Restart=always
